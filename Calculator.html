@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Document</title>
+
+</head>
+<body>
+
+    <script>
+        var num1,num2,res;
+        function myFunction() {
+          num1=document.getElementById("value1").value;
+          num2=document.getElementById("value2").value;
+
+        if(num1=="" || num1==null){
+           alert("Value should not be null please enter a value to calculate");
+        }
+        else if(num2=="" || num2==null){
+           alert("Value should not be null please enter a value to calculate");
+        }
+        
+         if (isNaN(num1) && isNaN(num2)) {
+            alert("input is not valid");
+          } else {
+            alert("input is valid");
+          }
+          document.getElementById("answer").readOnly = "true";
+        }
+        
+        function addition()
+        {
+            
+          num1 = Number(document.getElementById("value1").value);
+          num2 =Number(document.getElementById("value2").value);
+          res=num1+num2;
+
+           document.getElementById("answer").value=res;
+          
+        }
+       
+        function substraction()
+        {
+            
+          num1 = Number(document.getElementById("value1").value);
+          num2 =Number(document.getElementById("value2").value);
+          res= num1-num2;
+
+           document.getElementById("answer").value=res;
+          
+        }
+        function multiplication()
+        {
+            
+          num1 = Number(document.getElementById("value1").value);
+          num2 =Number(document.getElementById("value2").value);
+          res= num1*num2;
+
+           document.getElementById("answer").value=res;
+        }
+        function division()
+        {
+            
+          num1 = Number(document.getElementById("value1").value);
+          num2 = Number(document.getElementById("value2").value);
+          res= num1/num2;
+
+           document.getElementById("answer").value=res;
+          
+        }
+        function Clear() {
+
+        document.getElementById("value1").value = "";
+        document.getElementById("value2").value = "";
+        document.getElementById("answer").value=" ";
+}
+        </script>
+        
+
+<div id="calculator">
+number 1<input type="text" id="value1"> <br><br>
+number 2<input type="text" id="value2"> <br><br>
+Result <input id="answer"><br>
+<br>
+<button type="button" onclick="Clear()">C</button>
+<button type="button" onclick="addition(),myFunction()">add</button> &nbsp;
+<button type="button" onclick="substraction(),myFunction()">sub</button> &nbsp;
+<button type="button" onclick="multiplication(),myFunction()">mul</button>  &nbsp;
+<button type="button" onclick="division(),myFunction()">Div</button>  <br><br>
+</div>   
+</body>
+</html>
