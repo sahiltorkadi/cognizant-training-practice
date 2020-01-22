@@ -1,0 +1,123 @@
+
+  * {
+    margin: 0px;
+    padding: 0px;
+       
+  }
+  
+  body {
+    background-color: rgb(116, 161, 197);
+  }
+  
+  #wrapper {
+    width: 400px;
+    height: 50%;
+    overflow: hidden;
+    border: 0px solid #000;
+    margin: 50px auto;
+    padding: 10px;
+  }
+  
+  .main-content {
+  padding: 0px;
+    width: 300px;
+    height: 40%;
+    margin: 100px auto;
+    background-color:fff;
+    border: 2px solid #111418;
+    padding: 100px 30px;
+    padding-left: 0px;
+    
+  }
+  
+  .header {
+      width: 80%;
+      padding: 10px;
+   
+  }
+  
+  .header img {
+    height: 80px;
+    width: 100px;
+    margin: 20px;
+    border:1px ;
+    position: relative;
+    left: 40px;
+  }
+  
+  .input-1,
+  .input-2 {
+    width: 100%;
+    margin: 10px;
+    margin-left: 10px;
+    padding: 10px 20px;
+    border: 1px solid #181a1f;
+    box-sizing: border-box;
+    border-radius: 15px;
+  }
+  
+  .overlap-text {
+    position: relative;
+  }
+  
+  .overlap-text a {
+    position: absolute;
+    top: 10px;
+    right: -30px;
+    color: #2976c2;
+    font-size: 14px;
+    text-decoration: none;
+    font-family: 'Overpass Mono', monospace;
+    letter-spacing: -1px;
+  }
+  
+  .btn {
+    width: 100%;
+    
+    height:15%;
+    margin: 10PX;
+    background-color: #2477bb;
+    border: 2px solid #bcc4ca;
+    padding: 10px 80px;
+    color:floralwhite;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  
+  .sub-content {
+  
+    width: 100%;
+    height: 40%;
+    margin: auto 15px;
+    border: 1px solid #070d0e;
+    padding: 5px 64px;
+    background-color:floralwhite);
+    margin-right: 50px;
+    
+  }
+  
+  .s-part {
+    text-align: center;
+    font-family: 'Overpass Mono', monospace;
+    word-spacing: -3px;
+    letter-spacing: -2px;
+    font-weight: normal;
+    
+  }
+  
+  .s-part a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #268be9;
+    font-family: 'Overpass Mono', monospace;
+    word-spacing: -3px;
+    letter-spacing: -2px;
+    font-weight: normal;
+  }
+  
+  input:focus {
+      background-color: rgb(199, 238, 91);
+  }
+  
+  
