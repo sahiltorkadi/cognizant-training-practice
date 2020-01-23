@@ -1,0 +1,15 @@
+
+<div><h2>Name:{{name}}</h2></div>
+<div><h2>Age:{{age}}</h2></div>
+<div><h2>email:{{email}}</h2></div>
+
+<div *ngif="age>20"><h1>Eligible for voting</h1></div>
+
+<div [ngSwitch]="switch_expression">
+    <div *ngSwitchCase="match_expression_1">...</div></div>
+    <div *ngSwitchCase="match_expression_2">...</div></div>
+    <div *ngSwitchCase="match_expression_3">...</div></div>
+
+    <div *ngSwitchDefault>...</div>
+</div>
+<input type="button" value="change" (click)="changeval"/>
