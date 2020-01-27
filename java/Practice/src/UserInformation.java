@@ -4,23 +4,25 @@ public class UserInformation {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		String Name;
-		int Age;
+		int year;
 		
 		System.out.println("Enter the user Name=");
 		Scanner sc1=new Scanner(System.in);
 		Name=sc1.next();
-		if (!Name.matches("[a-zA-Z_]+")) {
-		    System.out.println("Invalid name");
+		
+		if(!Name.matches("[a-zA-Z_]+"))
+		{
+		    System.out.println("------------Invalid Input-------------");
+		    System.out.println("please enter valid input");
+		    
 		}
 				
 		System.out.println("Enter the user Age=");
 		Scanner sc2=new Scanner(System.in);
-		Age=sc2.nextInt();
-		if (!Age.matches("[0-9]+")) {
-		System.out.println("Invalid number");
-		
-		System.out.println("user Name="+Name);
-		System.out.println("user Age="+Age);
+		year=sc2.nextInt();
+
+		System.out.println("user Name=" +Name);
+		System.out.println("user Age=" +year);
 		
 		sc1.close();   
 		sc2.close();
