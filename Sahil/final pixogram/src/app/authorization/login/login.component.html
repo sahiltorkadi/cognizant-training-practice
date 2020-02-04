@@ -1,0 +1,35 @@
+
+  <div style="height: 500px;">
+    <br/>
+    <br/>
+    <div *ngIf="!autherized" class="text-danger">
+      <h3>{{errorMessage}}</h3>
+    </div>
+      <div class="header">
+          <img src="assets\pixo.png"/>
+      </div>
+    <div class="form-group">
+      <div class="l-part">
+         <input type="text" class="input-1" placeholder="Username"#txtLogin />
+          <div class="overlap-text">
+            <input type="password" class="input-2" placeholder="Password"#txtPass />
+            <br><a href="forgotpassword.html">Forgot?</a>
+  
+        <input type="button" value="Login" class="btn" (click)="checkLogin(txtLogin, txtPass)" />
+    </div>
+  </div>
+  <br>
+  <div class="sub-content">
+    <div class="s-part"><br>
+      Don't have an account?<a [routerLink]="['/register']" #signup>Sign up</a>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
